@@ -22,6 +22,3 @@ reverse1_test() ->
 
 reverse2_test() ->
   ?assertEqual([], hello:reverse([])).
-
-reverse3_test() ->
-  ?assertEqual([1,2], hello:reverse([2,1])).
