@@ -1,4 +1,4 @@
--module(hello_app).
+-module(stock_app).
 
 -behaviour(application).
 
@@ -9,8 +9,9 @@
 %% Application callbacks
 %% ===================================================================
 
-start(_StartType, _StartArgs) ->
-    hello_sup:start_link().
+%start(_StartType, _StartArgs) -
+start(normal, []) ->
+    stock_sup:start_link().
 
 stop(_State) ->
     ok.

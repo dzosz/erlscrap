@@ -1,0 +1,15 @@
+{application, stock,
+  [
+    {description, "stock server"},
+    {vsn, "1"},
+    {registered, []},
+    {modules, [stock_app, stock]},
+    {registered, [stock]},
+    {applications, [
+      kernel,
+      stdlib,
+      odbc
+    ]},
+    {mod, {stock_app, []}},
+    {env, []}
+  ]}.

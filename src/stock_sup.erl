@@ -1,4 +1,4 @@
--module(hello_sup).
+-module(stock_sup).
 
 -behaviour(supervisor).
 
